@@ -1,0 +1,15 @@
+/home/arthur/GitRepos/AntSimulationModifactions/bin/Debug/net9.0/AntSimulation
+/home/arthur/GitRepos/AntSimulationModifactions/bin/Debug/net9.0/AntSimulation.deps.json
+/home/arthur/GitRepos/AntSimulationModifactions/bin/Debug/net9.0/AntSimulation.runtimeconfig.json
+/home/arthur/GitRepos/AntSimulationModifactions/bin/Debug/net9.0/AntSimulation.dll
+/home/arthur/GitRepos/AntSimulationModifactions/bin/Debug/net9.0/AntSimulation.pdb
+/home/arthur/GitRepos/AntSimulationModifactions/obj/Debug/net9.0/AntSimulation.GeneratedMSBuildEditorConfig.editorconfig
+/home/arthur/GitRepos/AntSimulationModifactions/obj/Debug/net9.0/AntSimulation.AssemblyInfoInputs.cache
+/home/arthur/GitRepos/AntSimulationModifactions/obj/Debug/net9.0/AntSimulation.AssemblyInfo.cs
+/home/arthur/GitRepos/AntSimulationModifactions/obj/Debug/net9.0/AntSimulation.csproj.CoreCompileInputs.cache
+/home/arthur/GitRepos/AntSimulationModifactions/obj/Debug/net9.0/AntSimulation.sourcelink.json
+/home/arthur/GitRepos/AntSimulationModifactions/obj/Debug/net9.0/AntSimulation.dll
+/home/arthur/GitRepos/AntSimulationModifactions/obj/Debug/net9.0/refint/AntSimulation.dll
+/home/arthur/GitRepos/AntSimulationModifactions/obj/Debug/net9.0/AntSimulation.pdb
+/home/arthur/GitRepos/AntSimulationModifactions/obj/Debug/net9.0/AntSimulation.genruntimeconfig.cache
+/home/arthur/GitRepos/AntSimulationModifactions/obj/Debug/net9.0/ref/AntSimulation.dll
