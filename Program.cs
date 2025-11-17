@@ -39,7 +39,7 @@ namespace AntSimCS
                         SimulationParameters = new List<int> { 2, 7, 7, 500, 3, 10, 500, 25 };
                         break;
                     case "6":
-                        customiseSimulation();
+                        CustomiseSimulation();
                         break;
                     case "7":
                         SimulationParameters = new List<int> { 2, 7, 7, 500, 3, 10, 500, 25 };
@@ -54,7 +54,7 @@ namespace AntSimCS
             do
             {
                 DisplayMenu();
-                ; Choice = GetChoice();
+                Choice = GetChoice();
                 switch (Choice)
                 {
                     case "1":
@@ -148,12 +148,22 @@ namespace AntSimCS
             Console.WriteLine("Number of food cells: 3");
             Console.WriteLine("Number of ants in nest: 10");
             Console.WriteLine("Pheromone strength: 500");
-            Console.WriteLine("Pheromone decay: 25");
+            Console.WriteLine("Pheromone decay: 25"); Console.WriteLine();
+            Console.WriteLine("\n7:");
+            Console.WriteLine("Number of nests: 2");
+            Console.WriteLine("Number of food rows: 7");
+            Console.WriteLine("Number of food coloumns: 7");
+            Console.WriteLine("Number of food in nest: 500");
+            Console.WriteLine("Number of food cells: 3");
+            Console.WriteLine("Number of ants in nest: 10");
+            Console.WriteLine("Pheromone strength: 500");
+            Console.WriteLine("Pheromone decay: 25"); Console.WriteLine();
+
             Console.WriteLine("\n6:");
             Console.WriteLine("Customise a simulation");
         }
 
-        static void customiseSimulation()
+        static void CustomiseSimulation()
         {
             Console.WriteLine("\nHow many nests: ");
             int userNestNum = Convert.ToInt32(Console.ReadLine());
@@ -221,6 +231,7 @@ namespace AntSimCS
             protected List<Nest> Nests = new List<Nest>();
             protected int NumberOfRows, NumberOfColumns, StartingFoodInNest, StartingNumberOfFoodCells, StartingNumberOfNests;
             protected int StartingAntsInNest, NewPheromoneStrength, PheromoneDecay;
+            protected int stageCount = 0;
 
             public Simulation(List<int> SimulationParameters)
             {
@@ -513,6 +524,7 @@ namespace AntSimCS
             {
                 for (int Count = 1; Count <= NumberOfStages; Count++)
                 {
+                    stageCount++;
                     List<Pheromone> PheromonesToDelete = new List<Pheromone>();
                     foreach (Pheromone P in Pheromones)
                     {
@@ -553,6 +565,10 @@ namespace AntSimCS
                             }
                             A.ChooseCellToMoveTo(GetIndicesOfNeighbours(A.GetRow(), A.GetColumn()),
                                                  GetIndexOfNeighbourWithStrongestPheromone(A.GetRow(), A.GetColumn()));
+                        }
+                        // have a 1 in 20 chance of the ant dying 
+                        if (RGen.Next(21) == 20)
+                        {
                         }
                     }
                     foreach (Nest N in Nests)
