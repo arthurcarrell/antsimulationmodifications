@@ -41,17 +41,20 @@ namespace AntSimCS
                     case "6":
                         customiseSimulation();
                         break;
+                    case "7":
+                        SimulationParameters = new List<int> { 2, 7, 7, 500, 3, 10, 500, 25 };
+                        break;
                     default:
                         Console.Write("Enter simulation number: ");
                         break;
                 }
-            } while (SimNo.Length != 1 || !"123456".Contains(SimNo));
+            } while (SimNo.Length != 1 || !"1234567".Contains(SimNo));
             Simulation ThisSimulation = new Simulation(SimulationParameters);
             string Choice;
             do
             {
                 DisplayMenu();
-                Choice = GetChoice();
+                ; Choice = GetChoice();
                 switch (Choice)
                 {
                     case "1":
